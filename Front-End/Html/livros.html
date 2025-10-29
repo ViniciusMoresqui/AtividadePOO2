@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerenciamento de Livros</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="livros-body">
+  <header>
+    <h1>📖 Gerenciamento de Livros</h1>
+    <nav>
+      <button id="logout">Sair</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="formulario">
+      <h2>Adicionar / Editar Livro</h2>
+      <form id="formLivro">
+        <input type="hidden" id="id">
+
+        <label for="titulo">Título</label>
+        <input type="text" id="titulo" placeholder="Digite o título" required>
+
+        <label for="autor">Autor</label>
+        <input type="text" id="autor" placeholder="Digite o autor" required>
+
+        <label for="genero">Gênero</label>
+        <input type="text" id="genero" placeholder="Digite o gênero" required>
+
+        <button type="submit">Salvar</button>
+      </form>
+    </section>
+
+    <section id="lista">
+      <h2>Lista de Livros</h2>
+      <div id="livros"></div>
+    </section>
+  </main>
+
+</body>
+<script src="/js/consumidorAPI.js"></script>
+</html>
